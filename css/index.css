@@ -1,0 +1,213 @@
+/*==============================
+=            banner            =
+==============================*/
+
+.platinum-vid{
+	position: relative;
+	height: 100vh;
+	margin-top: -60px;
+}
+
+.platinum-vid video{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.query-wrapper{
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.query-wrapper h4{
+	color: #ffffff;
+}
+
+.q-card{
+	background: var(--red);
+	padding: 15px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.q-card .btn-primary{
+	color: #fff;
+	background-color: transparent;
+	border-color: #ffffff;
+	width: 95%;
+}
+
+.q-card .btn-primary:hover {
+    color: var(--red);
+    background-color: #ffffff;
+    border-color: var(--dark-red);
+}
+
+.q-card .btn-primary:focus{
+	box-shadow: 0 0 0 0.2rem rgb(185 33 39);
+}
+
+.q-card .btn-primary:not(:disabled):not(.disabled):active {
+    color: var(--red);
+    background-color: #eeeeee;
+    border-color: var(--dark-red);
+}
+
+/*=====  End of banner  ======*/
+
+/*=============================
+=            plots            =
+=============================*/
+
+.plots .nav-tabs .nav-link.active {
+	color: #ffffff;
+	background-color: var(--red);
+	border-color: var(--red);
+}
+
+.plots .nav-tabs .nav-link:hover {
+    border-color: var(--red);
+}
+
+.plots .nav-tabs {
+    border-bottom: unset;
+}
+
+.plots .tab-content{
+	border: 1px solid var(--red);
+	border-radius: 10px;
+}
+
+.plots .nav{
+	justify-content: center;
+}
+
+.plots .tab-content{
+	padding: 15px;
+}
+
+.plots .tab-content img{
+	border: 1px solid var(--red);
+	border-radius: 10px;
+}
+
+.plots .tab-content .col-lg-3{
+	display: flex;
+}
+
+.plots .nav-tabs .nav-link {
+    border: 1px solid #00000040;
+    border-bottom: none;
+}
+
+.plots .nav-link:not(:last-child){
+	margin-right: 15px;
+}
+/*=====  End of plots  ======*/
+
+/*=======================================
+=            platinum family            =
+=======================================*/
+
+.family-wrapper img{
+	width: 100%;
+	transition: 0.3s all;
+}
+
+.family-wrapper{
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid var(--red);
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+.family-wrapper:hover img{
+	transform: scale(1.1);
+}
+
+.family-wrapper:hover{
+	box-shadow: 0px 0 20px #e91b236e;
+}
+
+/*=====  End of platinum family  ======*/
+
+/*=====================================
+=            special offer            =
+=====================================*/
+
+.offer-card{
+	background: rgb(238 238 238 / 50%);
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.offer-video{
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid lightgray;
+}
+
+.offer-card li::before{
+	content: '\f14a';
+	color: var(--red);
+	font-family: var(--faw);
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.offer-card li{
+	display: flex;
+	font-size: 14px;
+}
+
+.offer-card li:not(:last-child){
+	margin-bottom: 15px;
+}
+
+/*=====  End of special offer  ======*/
+
+/*=================================
+=            milestones            =
+=================================*/
+
+.mil-wrapper{
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.mil-wrapper svg{
+	height: 64px;
+}
+
+/*=====  End of milestones  ======*/
+
+/*=======================================
+=            customer review            =
+=======================================*/
+
+.review-wrapper{
+	border: 1px solid var(--red);
+	padding: 15px;
+	border-radius: 10px;
+	transition: 0.5s all;
+	max-width: 700px;
+}
+
+.owl-item.active.center .review-wrapper{
+	background: var(--red);
+	color: #ffffff;
+}
+
+.owl-item.active.center .review-wrapper .blockquote-footer{
+	color: #ffffffbf;
+}
+
+/*=====  End of customer review  ======*/
+
+
