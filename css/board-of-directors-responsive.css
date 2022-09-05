@@ -1,0 +1,23 @@
+@media (max-width: 992px){
+	.floating-plate,.floating-plate-right{
+		display: none;
+	}
+	.bod-member-bg{
+		min-height: unset;
+		padding: unset;
+		text-align: center;
+		overflow: hidden;
+	}
+	.bod-member-bg .right{
+		width: unset;
+		max-width: calc(100% - 30px);
+		position: unset;
+		padding-top: 20px;
+	}
+	.bod-member-bg .left{
+		width: unset;
+		max-width: calc(100% - 30px);
+		position: unset;
+		padding-top: 20px;
+	}
+}

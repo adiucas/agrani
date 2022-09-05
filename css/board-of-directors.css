@@ -1,0 +1,84 @@
+.bod-member-wrapper{
+	width: 100%;
+}
+.bod-member-bg{
+	background: #dddddd;
+	position: relative;
+	min-height: 430px;
+	padding: 30px;
+}
+
+.bod-member-bg:not(:first-child){
+	margin-top: 100px;
+}
+.bod-member-bg .right{
+	max-height: 400px;
+	position: absolute;
+	bottom: 0;
+	right: 70px;
+}
+
+.bod-member-bg .left{
+	max-height: 400px;
+	position: absolute;
+	bottom: 0;
+	left: 70px;
+}
+
+.floating-plate{
+	max-width: 600px;
+	position: absolute;
+	background: var(--lg);
+	padding: 70px;
+	left: -240px;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0 1px 50px #2e923347;
+	border: 1px solid #2e923347;
+}
+
+.floating-plate-right{
+	max-width: 600px;
+	position: absolute;
+	background: var(--lg);
+	padding: 70px;
+	right: -240px;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0 1px 50px #2e923347;
+	border: 1px solid #2e923347;
+}
+
+.floating-plate h2, .floating-plate-right h2{
+	color: var(--green);
+}
+
+.floating-plate h5, .floating-plate-right h5{
+	color: #585858;
+	margin-bottom: 15px;
+}
+
+.floating-plate h6, .floating-plate-right h6{
+	font-weight: 400;
+}
+
+.mobile-nameplate{
+	border: 1px solid #2e923347;
+}
+
+.mobile-nameplate-wrapper{
+	padding: 30px;
+}
+
+.mobile-nameplate h2{
+	color: var(--green);
+}
+
+.mobile-nameplate h5{
+	color: #585858;
+	margin-bottom: 15px;
+}
+
+.mobile-nameplate h6{
+	font-weight: 400;
+}

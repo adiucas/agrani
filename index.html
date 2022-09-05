@@ -6,16 +6,15 @@
 	<meta name="description" content="">
 	<!-- opengraph -->
 	<!-- <meta property="og:image" content="images/thumbnail.jpg"> -->
-	<title>Agrani Securities Ltd.</title>
+	<title>Agrani Insurance Securities Ltd.</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 	<!-- css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<link rel="stylesheet" href="css/bootstrap-submenu.css">
 	<link rel="stylesheet" href="css/owl-caro/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl-caro/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/common.css">
@@ -24,15 +23,546 @@
 	<link rel="stylesheet" href="css/index-responsive.css">
 	<!-- scripts -->
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/bootstrap-submenu.min.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
 	<!--============================
 	=            header            =
 	=============================-->
-	<section w3-include-html="includes/header.html">
+	<section class="sticky-top" w3-include-html="includes/header.html">
 	</section>
+
+	<!--============================
+	=            banner            =
+	=============================-->
+	<section class="banner">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div class="todays-news">
+				<marquee scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero harum, eius aliquam. Repudiandae similique fugiat ea quas, consequuntur nam veritatis rerum molestiae neque ad voluptate, dignissimos libero eveniet architecto nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga inventore quo aliquid ut at eveniet rerum aspernatur, quia pariatur voluptatem tempora non ducimus vel veritatis sunt illum nobis! In, nam?
+				</marquee>
+			</div>
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/BANNER-IMAGE-1.jpg" class="d-block w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="images/BANNER-IMAGE-2.jpg" class="d-block w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="images/BANNER-IMAGE-3.jpg" class="d-block w-100">
+				</div>
+			</div>
+			<a class="carousel-control-prev d-none d-lg-flex" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next d-none d-lg-flex" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<!--=======================================
+	=            market highlights            =
+	========================================-->
+	<div class="container ptb30" data-aos="zoom-in" data-aos-delay="250">
+		<div class="market-highlights">
+			<div class="section-title">
+				<div class="d-flex align-items-center">
+					<i class="fa-solid fa-chart-pie mr-2"></i>
+					<span class="mr-2">Market Highlights</span>
+					<button class="btn btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> <span>Full View</span></button>
+				</div>
+				<ul class="nav nav-pills" id="pills-tab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="pills-price-tab" data-toggle="pill" href="#pills-price" role="tab" aria-controls="pills-price" aria-selected="true">Price</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="pills-change-tab" data-toggle="pill" href="#pills-change" role="tab" aria-controls="pills-change" aria-selected="false">Change</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="pills-changep-tab" data-toggle="pill" href="#pills-changep" role="tab" aria-controls="pills-changep" aria-selected="false">% Change</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+			  <div class="tab-pane fade show active" id="pills-price" role="tabpanel" aria-labelledby="pills-price-tab">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active">
+			  	    	<table class="table table-responsive">
+			  	    	   <thead>
+			  	    	      <tr>
+			  	    	         <th>Trading Code</th>
+			  	    	         <th class="text-right">Yesterday Price</th>
+			  	    	         <th class="text-right">Last Tarde</th>
+			  	    	         <th class="text-right">Close Price</th>
+			  	    	         <th class="text-center">Change</th>
+			  	    	         <th class="text-center">%</th>
+			  	    	      </tr>
+			  	    	   </thead>
+			  	    	   <tbody>
+			  	    	      <tr>
+			  	    	         <td>DBH</td>
+			  	    	         <td class="text-right">75.30</td>
+			  	    	         <td class="text-right">67.90</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-7.40</td>
+			  	    	         <td style="color: red;" class="text-center">-9.83</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>ADNTEL</td>
+			  	    	         <td class="text-right">66.10</td>
+			  	    	         <td class="text-right">65.80</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	         <td style="color: red;" class="text-center">-0.45</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>MATINSPINN</td>
+			  	    	         <td class="text-right">65.60</td>
+			  	    	         <td class="text-right">65.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.20</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>SQUARETEXT</td>
+			  	    	         <td class="text-right">63.70</td>
+			  	    	         <td class="text-right">63.60</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.10</td>
+			  	    	         <td style="color: red;" class="text-center">-0.16</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>NAHEEACP</td>
+			  	    	         <td class="text-right">62.90</td>
+			  	    	         <td class="text-right">63.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td class="text-center">0.50</td>
+			  	    	         <td class="text-center">0.79</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	   </tbody>
+			  	    	</table>
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<table class="table table-responsive">
+			  	    	   <thead>
+			  	    	      <tr>
+			  	    	         <th>Trading Code</th>
+			  	    	         <th class="text-right">Yesterday Price</th>
+			  	    	         <th class="text-right">Last Tarde</th>
+			  	    	         <th class="text-right">Close Price</th>
+			  	    	         <th class="text-center">Change</th>
+			  	    	         <th class="text-center">%</th>
+			  	    	      </tr>
+			  	    	   </thead>
+			  	    	   <tbody>
+			  	    	      <tr>
+			  	    	         <td>DBH</td>
+			  	    	         <td class="text-right">75.30</td>
+			  	    	         <td class="text-right">67.90</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-7.40</td>
+			  	    	         <td style="color: red;" class="text-center">-9.83</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>ADNTEL</td>
+			  	    	         <td class="text-right">66.10</td>
+			  	    	         <td class="text-right">65.80</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	         <td style="color: red;" class="text-center">-0.45</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>MATINSPINN</td>
+			  	    	         <td class="text-right">65.60</td>
+			  	    	         <td class="text-right">65.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.20</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>SQUARETEXT</td>
+			  	    	         <td class="text-right">63.70</td>
+			  	    	         <td class="text-right">63.60</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.10</td>
+			  	    	         <td style="color: red;" class="text-center">-0.16</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>NAHEEACP</td>
+			  	    	         <td class="text-right">62.90</td>
+			  	    	         <td class="text-right">63.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td class="text-center">0.50</td>
+			  	    	         <td class="text-center">0.79</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	   </tbody>
+			  	    	</table>
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<table class="table table-responsive">
+			  	    	   <thead>
+			  	    	      <tr>
+			  	    	         <th>Trading Code</th>
+			  	    	         <th class="text-right">Yesterday Price</th>
+			  	    	         <th class="text-right">Last Tarde</th>
+			  	    	         <th class="text-right">Close Price</th>
+			  	    	         <th class="text-center">Change</th>
+			  	    	         <th class="text-center">%</th>
+			  	    	      </tr>
+			  	    	   </thead>
+			  	    	   <tbody>
+			  	    	      <tr>
+			  	    	         <td>DBH</td>
+			  	    	         <td class="text-right">75.30</td>
+			  	    	         <td class="text-right">67.90</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-7.40</td>
+			  	    	         <td style="color: red;" class="text-center">-9.83</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>ADNTEL</td>
+			  	    	         <td class="text-right">66.10</td>
+			  	    	         <td class="text-right">65.80</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	         <td style="color: red;" class="text-center">-0.45</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>MATINSPINN</td>
+			  	    	         <td class="text-right">65.60</td>
+			  	    	         <td class="text-right">65.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.20</td>
+			  	    	         <td style="color: red;" class="text-center">-0.30</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>SQUARETEXT</td>
+			  	    	         <td class="text-right">63.70</td>
+			  	    	         <td class="text-right">63.60</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.10</td>
+			  	    	         <td style="color: red;" class="text-center">-0.16</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>NAHEEACP</td>
+			  	    	         <td class="text-right">62.90</td>
+			  	    	         <td class="text-right">63.40</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td class="text-center">0.50</td>
+			  	    	         <td class="text-center">0.79</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	      <tr>
+			  	    	         <td>PEOPLESINS</td>
+			  	    	         <td class="text-right">63.90</td>
+			  	    	         <td class="text-right">63.20</td>
+			  	    	         <td class="text-right">0.00</td>
+			  	    	         <td style="color: red;" class="text-center">-0.70</td>
+			  	    	         <td style="color: red;" class="text-center">-1.10</td>
+			  	    	      </tr>
+			  	    	   </tbody>
+			  	    	</table>
+			  	    </div>
+			  	  </div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="pills-change" role="tabpanel" aria-labelledby="pills-change-tab">
+			  	
+			  </div>
+			  <div class="tab-pane fade" id="pills-changep" role="tabpanel" aria-labelledby="pills-changep-tab">
+			  	
+			  </div>
+			</div>
+			<div class="custom-indicators">
+				<div class="wrapper" title="First Page">
+					<i class="fa-solid fa-angles-left"></i>
+				</div>
+				<div class="wrapper" title="Previous Page">
+					<span><i class="fa-solid fa-chevron-left"></i></span>
+				</div>
+				<div class="wrapper">
+					<span>1</span>
+				</div>
+				<div class="wrapper">
+					<span>2</span>
+				</div>
+				<div class="wrapper active">
+					<span>3</span>
+				</div>
+				<div class="wrapper">
+					<span>4</span>
+				</div>
+				<div class="wrapper">
+					<span>5</span>
+				</div>
+				<div class="wrapper" title="Next Page">
+					<span><i class="fa-solid fa-chevron-right"></i></span>
+				</div>
+				<div class="wrapper" title="Last Page">
+					<i class="fa-solid fa-angles-right"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--===========================
+	=            about            =
+	============================-->
+	<div class="container-fluid ptb60 bg-lg">
+		<div class="row">
+			<div class="container">
+				<div class="about-us">
+					<div class="section-title" data-aos="fade-right">
+						About Agrani Insurance Securities Ltd.
+					</div>
+					<div class="section-description mt-2" data-aos="fade-up" data-aos-delay="250">
+						<p>
+							Agrani Insurance Securities Limited been incorporated on March 2021 a public company limited by registered under companies Act. certification of incorporation no. C-169949/2021 59% owned by Agrani Insurance Company Limited. AISL has authorized capital of BDT 250 million a 100
+						</p>
+						<br>
+						<p>
+							The company aims to have a strong commitment to its corporate, institutional clients. The of AISL to provide professional and services to our clients and offer highest quality products. We are aiming to provide investors a platform to trade in both Dhaka Stock Exchange (DSE) and Chittagong Stock Exchange (CSE). Our services will be comprehensive in nature, including brokerage, CDBL, research and custodian services. We will provide all types of Brokerage Services through DSE and CSE starting from Beneficiary Account (BO) opening to CDBL related services. Thus AISL is dedicated for the development and expansion of the Capital Market.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--==================================
+	=            our services            =
+	===================================-->
+	<div class="container ptb30">
+		<div class="our-services">
+			<div class="section-title" data-aos="fade-right">
+				Our Services
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="250">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/dp-service.png">
+						<div class="text">DP <br>SERVICE</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="500">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/broker-service.png">
+						<div class="text">brokerage <br>SERVICE</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="750">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/ipo-app.png">
+						<div class="text">ipo <br>application</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="1000">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/irs.png">
+						<div class="text">investor relation <br> service</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="1250">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/custodial-service.png">
+						<div class="text">custodial <br>service</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-delay="1500">
+					<div class="service-wrapper">
+						<img class="icon" src="images/services/online-service.png">
+						<div class="text">online <br>services</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--====================================
+	=            mission vision            =
+	=====================================-->
+	<div class="container-fluid ptb60 bg-lg">
+		<div class="row">
+			<div class="container">
+				<div class="section-title" data-aos="fade-right">
+					Our Mission & Vission
+				</div>
+				<div class="section-description mt-2" data-aos="fade-up" data-aos-delay="250">
+					<p>
+						Our goal is to be a market leader by providing all encompassing international standard brokerage services to maximize the wealth of our investors with confidence,
+					</p>
+					<br>
+					<p>
+						We are strongly committed to establishing a lasting relationship with our clients by providing quality services with integrity, maintaining corporate governance through our skilled and qualified human resources, our joint commitment to develop and contribute to the capital market and contributing to the social responsibility and economic development of the country. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--========================================
+	=            chairman's message            =
+	=========================================-->
+	<div class="container ptb30">
+		<div class="section-title" data-aos="fade-right">Message from the CEO</div>
+		<div class="section-description">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="ch-name-wrapper" data-aos="zoom-in" data-aos-delay="250">
+						<h3>SM Helal Uddin Shamim </h3>
+						<h6>Managing Director & CEO</h6>
+					</div>
+					<div class="mt-2" data-aos="fade-up" data-aos-delay="500">
+						<p>
+							It is my immense pleasure to be able to present my company Agrani Insurance Securities Limited for your service. We are a full service broker and able to cater to needs of all classes of investors: Retail, Institutions and international. To better our services, we have reshaped ourselves recently-by hiring new talents and revamping the entire organization. We are now more efficient than ever.
+						</p>
+						<br>
+						<p>
+							We are well poised to set a new standard of service delivery by integrating technology to the fullest extent. Our principal objective is to ensure that we do each of the tasks in a better way than they are done by our peers.
+						</p>
+						<br>
+						<p>
+							We consider clients to be the heart of our business, thus we are ever more committed to give our best to ensure that our clients reach their objectives in the capital market. I will be glad if you if you consider us to take care of your investments.
+						</p>
+						<br>
+						<p>
+							We are also encouraging female investors. Woman who are over 18 years of age are eligible to invest. We're offering them a secure and comfortable environment for trading.
+						</p>
+						<br>
+						<p>
+							We're going ahead keeping some commitments in our heart: providing superior and prompt customer service, offering quality- rich and price-competitive finance solutions to the clients, responding quickly to the needs of the entrepreneurs in an honest, creditable and timely manner, promoting and serving equipment leasing and finance industry through partnership with the clients, maintaining dignity and high ethical standard at all levels of management.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 order-first order-lg-1">
+					<div class="ch-pic-wrapper">
+						<img src="images/person.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--============================
 	=            footer            =
@@ -43,15 +573,11 @@
 </body>
 <!-- scripts -->
 <script>
-	$('[data-submenu]').submenupicker();
-</script>
-<script>
 	includeHTML();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/index.js"></script>
 </html>

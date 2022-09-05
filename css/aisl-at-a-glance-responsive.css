@@ -1,0 +1,70 @@
+@media (max-width: 992px){
+	.mpc-holder-title{
+		display: block;
+	}
+	.mp-hint{
+		display: none;
+	}
+	.mpc-holder {
+	    justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.service-cards{
+		margin: 10px;
+	}
+
+	.mp-card{
+		overflow: hidden;
+	}
+
+	.mp-card .serial span {
+	    border-radius: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.mp-card .serial {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin-right: -15px;
+	    margin-left: -15px;
+	}
+	.mpc-holder-title {
+	    text-align: center;
+	    margin-top: 10px;
+	}
+	.mpc-holder{
+		margin-bottom: 10px;
+	}
+	.mp-card .serial span {
+	    padding: 5px 15px;
+	}
+	.mpc-holder-title.company{
+		display: none;
+	}
+	.mpc-holder.company{
+		justify-content: center;
+	}
+	.bslatg-wrapper {
+	    padding: 15px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.bslatg-wrapper .info {
+	    flex-direction: column;
+	    align-items: center;
+	     margin-left: 0; 
+	    justify-content: center;
+	    align-content: center;
+	    text-align: center;
+	}
+	.bslatg-wrapper .num-date{
+		font-size: 12px;
+	}
+	.bslatg-wrapper .authority{
+		color: var(--red);
+	}
+}

@@ -1,0 +1,27 @@
+/*===================================
+=           downloads      =
+===================================*/
+
+.down-wrapper{
+	background: var(--green);
+	padding: 10px 25px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: 0.3s all;
+}
+
+.down-wrapper:hover{
+	background: var(--dg);
+	    box-shadow: 0 5px 10px var(--bs);
+}
+.down-wrapper-parent{
+	margin-bottom: 15px;
+	display: block;
+}
+.down-wrapper-parent:last-child{
+	margin-bottom: 0;
+}
+
+/*=====  End of downloads  ======*/

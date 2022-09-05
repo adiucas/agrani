@@ -1,0 +1,42 @@
+/*==========================================
+=            chairman's message            =
+==========================================*/
+
+.ch-image{
+	overflow: hidden;
+	position: relative;
+}
+
+.ch-image .img-overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.name-designation{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	z-index: 1;
+	color: #ffffff;
+}
+
+.ch-message{
+	border: 1px solid var(--green);
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ch-message p{
+	text-align: justify;
+	font-size: 14px;
+}
+
+.quote-mark{
+	font-size: 50px;
+	color: var(--green);
+}
+/*=====  End of chairman's message  ======*/
