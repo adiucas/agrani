@@ -5,6 +5,7 @@
 .ch-image{
 	overflow: hidden;
 	position: relative;
+	border: 1px solid var(--green);
 }
 
 .ch-image .img-overlay{

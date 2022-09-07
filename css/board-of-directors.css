@@ -4,7 +4,7 @@
 .bod-member-bg{
 	background: #dddddd;
 	position: relative;
-	min-height: 430px;
+	min-height: calc(100vh - 250px);
 	padding: 30px;
 }
 
@@ -12,17 +12,17 @@
 	margin-top: 100px;
 }
 .bod-member-bg .right{
-	max-height: 400px;
+	max-height: calc(100vh - 300px);
 	position: absolute;
 	bottom: 0;
-	right: 70px;
+	right: 25%;
 }
 
 .bod-member-bg .left{
-	max-height: 400px;
+	max-height: calc(100vh - 300px);
 	position: absolute;
 	bottom: 0;
-	left: 70px;
+	left: 20%;
 }
 
 .floating-plate{

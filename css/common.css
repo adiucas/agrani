@@ -370,6 +370,9 @@ nav{
 	.navbar-expand-lg .navbar-collapse {
 	    justify-content: space-between;
 	}
+	.user-menu .dropdown-item{
+		text-align: left;
+	}
 }
 
 .nav-item.active{
