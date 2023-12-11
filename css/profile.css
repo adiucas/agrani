@@ -50,3 +50,16 @@
     display: flex;
     min-height: 31px;
 }
+
+.cust-card {
+    overflow: hidden;
+    border: 1px solid var(--green);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.cust-card .desc {
+    background: #ffff;
+    padding: 15px 20px;
+}
+

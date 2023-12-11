@@ -1,0 +1,64 @@
+/*===================================
+=           about about aisl      =
+===================================*/
+
+.corpo-profile .desc{
+	display: flex;
+	justify-content: center;
+}
+
+.cp-main-card .name-id{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid var(--green);
+	padding-right: 15px;
+}
+
+.cp-main-card .name-id img{
+	width: 300px;
+}
+
+.cp-main-card svg{
+	height: 16px;
+	fill: var(--green);
+	transition: 0.3s all;
+}
+
+.cp-main-card a{
+	width: 100%;
+	max-width: 300px;
+}
+
+.cp-main-card a:hover svg{
+	fill: white;
+}
+
+.client-info{
+	font-size: 14px;
+}
+
+/*=====  End of about about aisl  ======*/
+
+.dd-bg {
+    background: #eeeeee;
+    padding: 5px 10px;
+    display: flex;
+    min-height: 31px;
+}
+
+.contact-info .wrapper{
+	padding-left: 15px;
+	text-align: left;
+	width: 300px;
+}
+
+.contact-info .wrapper:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.contact-info .wrapper h5{
+	text-transform: uppercase;
+	color: var(--green);
+}

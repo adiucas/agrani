@@ -11,5 +11,7 @@
 	.market-highlights .section-title button span{
 		display: none;
 	}
-	
+	.carousel-indicators {
+	    bottom: 80px;
+	}
 }

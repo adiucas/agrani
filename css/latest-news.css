@@ -105,3 +105,15 @@
 	padding-right: 0;
 }
 /*=====  End of latest news  ======*/
+
+
+#ui-datepicker-div{
+	top: 4px !important;
+	z-index: 9999 !important;
+}
+
+.pagi{
+	background: #ffffff;
+	padding: 15px;
+	border: 1px solid var(--green);
+}

@@ -2,56 +2,71 @@
 =            banner            =
 ==============================*/
 
-.todays-news{
+.todays-news {
 	position: absolute;
 	background: #ffffff;
-	padding: 5px 15px 0;
+	padding: 5px 15px 5px;
 	border: 1px solid var(--green);
 	bottom: 0;
-	z-index: 1;
+	z-index: 2;
 	width: 100%;
+	align-items: center;
+}
+
+.todays-news label, .todays-news button, .todays-news a {
+	flex-shrink: 0;
+}
+
+.todays-news label {
+	color: var(--green);
+}
+
+.carousel-control-prev, .carousel-control-next {
+	height: calc(100% - 50px);
 }
 
 .carousel-indicators {
-    bottom: 40px;
+	bottom: 50px;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
 	background-clip: padding-box !important;
 	background: var(--green);
 	height: 7px;
 }
+
+
 /*=====  End of banner  ======*/
 
 /*=========================================
 =            market highlights            =
 =========================================*/
 
-.market-highlights{
+.market-highlights {
 	padding: 15px;
 	border: 1px solid var(--green);
 }
 
-.market-highlights .section-title{
+.market-highlights .section-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
 }
 
-.market-highlights .section-title:after{
+.market-highlights .section-title:after {
 	display: none;
 }
 
-.market-highlights .nav{
+.market-highlights .nav {
 	font-size: 14px;
 }
 
-.market-highlights .nav-item:hover .nav-link{
+.market-highlights .nav-item:hover .nav-link {
 	color: #ffffff;
 }
 
-.custom-indicators{
+.custom-indicators {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -59,35 +74,35 @@
 }
 
 
-.custom-indicators .wrapper{
+.custom-indicators .wrapper {
 	background: #ffffff;
-	    width: 25px;
-	    height: 25px;
-	    color: var(--green);
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    font-weight: bold;
-	    margin: 0 5px;
-	    cursor: pointer;
-	    border: 1px solid var(--green);
-	    transition: 0.3s all;
-	    font-size: 16px;
+	width: 25px;
+	height: 25px;
+	color: var(--green);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin: 0 5px;
+	cursor: pointer;
+	border: 1px solid var(--green);
+	transition: 0.3s all;
+	font-size: 16px;
 }
 
-.custom-indicators .wrapper:hover{
+.custom-indicators .wrapper:hover {
 	background: var(--green);
 	color: #ffffff;
 	transform: scale(1.3);
 }
 
-.custom-indicators .wrapper.active{
+.custom-indicators .wrapper.active {
 	background: var(--green);
 	transform: scale(1.3);
-	    color: #ffffff;
+	color: #ffffff;
 }
 
-.table{
+.table {
 	border-bottom: 1px solid var(--green);
 }
 
@@ -97,7 +112,7 @@
 =            about us            =
 ================================*/
 
-.about-us .section-title{
+.about-us .section-title {
 	display: unset;
 }
 
@@ -107,7 +122,7 @@
 =            our services            =
 ====================================*/
 
-.service-wrapper{
+.service-wrapper {
 	padding: 15px;
 	background: #ffffff;
 	border: 1px solid var(--green);
@@ -117,19 +132,20 @@
 	flex-direction: column;
 	cursor: pointer;
 	transition: 0.3s all;
+	width: 100%;
 }
 
-.service-wrapper:hover{
+.service-wrapper:hover {
 	transform: scale(1.1);
 	background: var(--lg);
 	box-shadow: 0 5px 10px 0px rgb(0 134 65 / 50%);
 }
 
-.service-wrapper .icon{
+.service-wrapper .icon {
 	height: 50px;
 }
 
-.service-wrapper .text{
+.service-wrapper .text {
 	font-size: 24px;
 	font-weight: bold;
 	color: var(--green);
@@ -139,28 +155,30 @@
 	margin-top: 5px;
 }
 
+.our-services div[class^="col-"] {
+	display: flex;
+}
+
 /*=====  End of our services  ======*/
 
 /*========================================
 =            chairman message            =
 ========================================*/
 
-.ch-name-wrapper{
+.ch-name-wrapper {
 	background: var(--green);
 	color: #ffffff;
 	padding: 15px;
 	margin-top: 15px;
 }
 
-.ch-pic-wrapper{
+.ch-pic-wrapper {
 	border: 1px solid #eeeeee;
 	margin-top: 15px;
 }
 
-.ch-pic-wrapper img{
+.ch-pic-wrapper img {
 	width: 100%;
 }
 
 /*=====  End of chairman message  ======*/
-
-
